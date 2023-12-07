@@ -22,7 +22,7 @@ gl2 <- gl.filter.secondaries(gl) # filter out SNPs that share a sequence tag, ex
 
 nLoc(gl2) #produced 9819 SNPs
 gl3 <- gl.filter.rdepth(gl2) # filter out loci with exceptionally low or high read depth (coverage)
-nLoc(gl3) #produced 8550 SNPs
+nLoc(gl3) #produced 8551 SNPs
 
 gl4 <- gl.filter.reproducibility(gl3, threshold = 0.95) # filter out loci for which the reproducibility (strictly repeatability) is less than threshold = 0.95
 
@@ -38,16 +38,16 @@ gl6 <- gl.filter.callrate(gl5, method="loc", threshold = 0.70)  #filter out loci
 
 gl6 <- gl.recalc.metrics(gl6)
 
-nLoc(gl6) # produced 3200 SNPs
+nLoc(gl6) # produced 3134 SNPs
 
 gl7 <- gl.filter.monomorphs(gl6, v=0) #filter out monomorphic loci
 gl7 <- gl.recalc.metrics(gl7)
 gl7
-nLoc(gl7) # produced 2790 SNPs
+nLoc(gl7) # produced 2745 SNPs
 
 m <- as.matrix(gl7) #save genlight object as matrix
 write.csv(m,file="filtered_loci_metadata1_1.csv") # saves as .csv
-gl.save(gl7,file="afrocarpus1_1.Rdata") # saves the the data as an R object filtered with 95% reproducibility, 70 % call rate, deleted individuals with less than 50% call rate, and monomorphic loci filtered out. it resulted in 1692 SNPS 
+gl.save(gl7,file="afrocarpus1_1.Rdata") # saves the the data as an R object filtered with 95% reproducibility, 70 % call rate, deleted individuals with less than 50% call rate, and monomorphic loci filtered out. it resulted in 2745 SNPS 
 
 
 ##2. Filtering (95% reproducibility, >65% call rate,  monomorphic loci, and removing individuals with < 50% call rate )
