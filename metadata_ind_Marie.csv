@@ -1,0 +1,95 @@
+id;pop;lat;lon;variety;remark
+C1;CobánAV;15.717778;-90.453611;Unknown;FEDECOVERA
+C2;CobánAV;15.71777;-90.453611;Unknown;FEDECOVERA
+C3;CobánAV;15.719593;-90.453042;Unknown;FEDECOVERA
+C4;CobánAV;15.719643;-90.455119;Unknown;FEDECOVERA
+C5;CobánAV;15.721099;-90.455988;Unknown;FEDECOVERA
+C6;CobánAV;15.722008;-90.457554;Unknown;FEDECOVERA
+C7;CobánAV;15.716944;-90.456389;Unknown;FEDECOVERA
+C8;CobánAV;15.714822;-90.455252;Unknown;FEDECOVERA
+C9;CobánAV;15.714275;-90.458299;Unknown;FEDECOVERA
+C10;CobánAV;15.715112;-90.460059;Unknown;FEDECOVERA
+C11;PanzosAV;15.287794;-89.760586;Unknown;
+C12;PanzosAV;15.261328;-89.77659;Unknown;
+C13;PanzosAV;15.27149;-89.771844;Unknown;
+C14;PanzosAV;15.265198;-89.771531;Unknown;
+C15;PanzosAV;15.264513;-89.769438;Unknown;
+C16;PanzosAV;15.266164;-89.771267;Unknown;
+C17;PanzosAV;15.272305;-89.766916;Unknown;
+C18;PanzosAV;15.272305;-89.766916;Unknown;
+C19;PanzosAV;15.28044;-89.764336;Unknown;
+C20;PanzosAV;15.282616;-89.766433;Unknown;
+C21;PanzosAV;15.28044;-89.764336;Unknown;
+C22;PanzosAV;15.267976;-89.769799;Unknown;
+C23;PanzosAV;15.28252;-89.761731;Unknown;
+C24;PanzosAV;15.268274;-89.769779;Unknown;
+C25;PanzosAV;15.268274;-89.769779;Unknown;
+C26;ChibaylLanquin;15.573056;-89.978333;Unknown;
+C27;ChibaylLanquin;15.577778;-89.987778;Unknown;
+C28;ChibaylLanquin;15.572778;-89.973611;Unknown;
+C29;ChibaylLanquin;15.5725;-89.973333;Unknown;
+C30;ChibaylLanquin;15.571111;-89.972333;Unknown;
+C31;ChibaylLanquin;15.570339;-89.970622;Unknown;
+C32;ChibaylLanquin;15.569722;-89.971389;Unknown;
+C33;ChibaylLanquin;15.558056;-89.97361;Unknown;
+C34;ChibaylLanquin;15.560833;-89.973611;Unknown;
+C35;ChibaylLanquin;15.562663;-89.971154;Unknown;
+C36;ChibaylLanquin;15.566737;-89.964421;UF613;
+C37;ChibaylLanquin;15.564722;-89.965;Unknown;
+C38;ChibaylLanquin;15.570222;-89.971972;CCN51;
+C39;ChibaylLanquin;15.571778;-89.971833;Unknown;
+C40;ChibaylLanquin;15.574972;-89.972833;Unknown;
+C41;ChibaylLanquin;15.568556;-89.96375;Unknown;
+C42;ChibaylLanquin;15.571806;-89.973722;CATIE_R1;
+C43;ChibaylLanquin;15.572194;-89.914556;UF676;
+C44;ChibaylLanquin;15.566333;-89.972556;ICS95;
+C45;ChibaylLanquin;15.56775;-89.972806;PMCT58;
+C46;ChibaylLanquin;15.581413;-89.890003;CATIE_R1;
+C47;ChibaylLanquin;15.581992;-89.888608;CATIE_R4;
+C48;ChibaylLanquin;15.583108;-89.888941;CATIE_R6;
+C49;ChibaylLanquin;15.58287;-89.886967;Criollo;
+C50;ChibaylLanquin;15.584472;-89.887461;Criollo;
+C51;ChibaylLanquin;15.585733;-89.886163;Angoleta;
+C52;ChibaylLanquin;15.586436;-89.879661;Cumbia_del_amor;
+C53;ChibaylLanquin;15.588761;-89.878854;Amelonado;
+C54;ChibaylLanquin;15.589536;-89.877719;Forastero;
+C55;ChibaylLanquin;15.591293;-89.879779;Calabacillo;
+I1;Criollo;15.707472;-88.972056;Criollo;
+I2;Criollo;15.706083;-88.972056;Criollo;
+I3;Criollo;15.77275;-88.814;Criollo;
+T1;Criollo;14.532138;-91.582904;Trinitario;
+M1;Criollo;14.553028;-91.458167;Criollo;
+M2;Criollo;14.51925;-91.475639;Criollo;
+M3;Criollo;14.483583;-91.406639;Criollo;
+M4;Criollo;14.57575;-91.444222;Criollo;
+M5;Criollo;14.526278;-91.583353;Criollo;
+P1;Criollo;16.789719;-89.936108;Criollo;
+CS1;Criollo;14.526278;-91.583353;Criollo;
+E1;Ecuador;0.098847;-79.225242;Nacional;Puerto Quito, Pichincha
+E2;Ecuador;0.097184;-79.226304;Nacional;Puerto Quito, Pichincha
+E4;Ecuador;0.096701;-79.228546;Nacional;Puerto Quito, Pichincha
+E6;Ecuador;0.09639;-79.231003;Nacional;Puerto Quito, Pichincha
+E7;Ecuador;0.14046;-79.274861;Nacional;Puerto Quito, Pichincha
+E8;Ecuador;0.139076;-79.274378;Nacional;Puerto Quito, Pichincha
+E9;Ecuador;0.138872;-79.277371;Nacional;Puerto Quito, Pichincha
+E10;Ecuador;0.136437;-79.275086;Nacional;Puerto Quito, Pichincha
+E11;Ecuador;0.109722;-79.21264;Nacional;Puerto Quito, Pichincha
+E12;Ecuador;0.109153;-79.214464;Nacional;Puerto Quito, Pichincha
+E13;Ecuador;0.107104;-79.216159;Nacional;Puerto Quito, Pichincha
+E14;Ecuador;0.105484;-79.214121;Nacional;Puerto Quito, Pichincha
+E15;Ecuador;0.130514;-79.205128;Nacional;Puerto Quito, Pichincha
+E16;Ecuador;0.127821;-79.205418;Nacional;Puerto Quito, Pichincha
+E17;Ecuador;0.124366;-79.206555;Nacional;Puerto Quito, Pichincha
+E18;Ecuador;0.100341;-79.167207;Nacional;Puerto Quito, Pichincha
+E19;Ecuador;0.098978;-79.168623;Nacional;Puerto Quito, Pichincha
+E22;Ecuador;0.097336;-79.165501;Nacional;Puerto Quito, Pichincha
+E23;Ecuador;0.100029;-79.157626;Nacional;Puerto Quito, Pichincha
+E24;Ecuador;0.097304;-79.156617;Nacional;Puerto Quito, Pichincha
+E26;Ecuador;-0.876641;-80.174947;Nacional;fortaleza del valle, Calceta, Manabí
+E28;Ecuador;0.862351;-79.810361;Nacional;Aproca, Atacames, Esmeraldas
+E29;Ecuador;0.108035;-79.170192;Nacional;Puerto Quito, Pichincha
+E30;Ecuador;-0.313793;-76.827924;Nacional;La Joya de los Sachas, Orellana
+E31;Ecuador;-0.28416;-79.253126;Nacional;Santo Domingo, Pichincha
+E32;Ecuador;-1.457389;-79.83085;Nacional;Vinces, Los Ríos
+E35;Ecuador;-0.485113;-76.99362;Nacional;Coca, Francisco de Orellana
+E37;Ecuador;-0.725411;-80.060504;Nacional;Chone, Manabí

@@ -1,0 +1,189 @@
+id,pop,lat,lon,Altitude,woreda,Stage,Sex,popn type,site
+AG001,Sidama,6.529954919,38.34217761,1801,Aleta Chuko,parent,male,front yard,Tesso/Sodicho
+AG002,Sidama,6.530018414,38.3423132,1803,Aleta Chuko,parent,male,front yard,Tesso/Sodicho
+AG003,Sidama,6.52991922,38.34254848,1805,Aleta Chuko,parent,female,front yard,Tesso/Sodicho
+AG004,Sidama,6.529900905,38.34237666,1803,Aleta Chuko,parent,male,front yard,Tesso/Sodicho
+AG005,Sidama,6.529792382,38.34239489,1795,Aleta Chuko,parent,female,front yard,Tesso/Sodicho
+AG006,Sidama,6.529810332,38.34228634,1806,Aleta Chuko,parent,male,front yard,Tesso/Sodicho
+AG007,Sidama,6.529539202,38.34246758,1803,Aleta Chuko,parent,female,front yard,Tesso/Sodicho
+AG008,Sidama,6.529503102,38.34253094,1803,Aleta Chuko,parent,female,front yard,Tesso/Sodicho
+AG009,Sidama,6.52979191,38.34203312,1809,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG010,Sidama,6.529383702,38.34114729,1796,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG011,Sidama,6.529029814,38.34029758,1788,Aleta Chuko,parent,female,front yard,Tesso/Sodicho
+AG012,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG013,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG014,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG015,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG016,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG017,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG018,Sidama,6.528903401,38.34046959,1782,Aleta Chuko,progeny,unknown,front yard,Tesso/Sodicho
+AG019,Sidama,6.541667479,38.34108599,1912,Aleta Chuko,parent,male,N.forest patch,Tesso/Borite
+AG020,Sidama,6.541667479,38.34108599,1912,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG021,Sidama,6.541794235,38.34117627,1913,Aleta Chuko,parent,female,N.forest patch,Tesso/Borite
+AG022,Sidama,6.541595909,38.34169208,1924,Aleta Chuko,parent,female,N.forest patch,Tesso/Borite
+AG023,Sidama,6.541595909,38.34169208,1924,Aleta Chuko,parent,male,N.forest patch,Tesso/Borite
+AG024,Sidama,6.541595909,38.34169208,1924,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG025,Sidama,6.541406047,38.34176469,1930,Aleta Chuko,parent,female,N.forest patch,Tesso/Borite
+AG026,Sidama,6.541406047,38.34176469,1930,Aleta Chuko,parent,male,N.forest patch,Tesso/Borite
+AG027,Sidama,6.541406047,38.34176469,1930,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG028,Sidama,6.541406071,38.34178278,1930,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG029,Sidama,6.541705567,38.34254214,1937,Aleta Chuko,parent,female,N.forest patch,Tesso/Borite
+AG030,Sidama,6.541705567,38.34254214,1937,Aleta Chuko,parent,male,N.forest patch,Tesso/Borite
+AG031,Sidama,6.541705567,38.34254214,1937,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG032,Sidama,6.541823431,38.34275001,1943,Aleta Chuko,parent,female,N.forest patch,Tesso/Borite
+AG033,Sidama,6.541823431,38.34275001,1943,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG034,Sidama,6.541823431,38.34275001,1943,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG035,Sidama,6.54237515,38.34270406,1935,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG036,Sidama,6.542274264,38.34164597,1923,Aleta Chuko,progeny,unknown,N.forest patch,Tesso/Borite
+AG037,Sidama,6.753145219,38.5126657,2045,Wonsho,parent,male,N.forest patch,Wonsho Abbo
+AG038,Sidama,6.752484835,38.51262112,2051,Wonsho,parent,female,N.forest patch,Wonsho Abbo
+AG039,Sidama,6.752710924,38.5125666,2042,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG040,Sidama,6.752076627,38.51147233,2057,Wonsho,parent,female,N.forest patch,Wonsho Abbo
+AG041,Sidama,6.752076627,38.51147233,2057,Wonsho,parent,male,N.forest patch,Wonsho Abbo
+AG042,Sidama,6.752076627,38.51147233,2057,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG043,Sidama,6.752500059,38.50976169,2042,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG044,Sidama,6.752500059,38.50976169,2042,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG045,Sidama,6.752074127,38.50898392,2044,Wonsho,parent,male,N.forest patch,Wonsho Abbo
+AG046,Sidama,6.752083182,38.50899296,2044,Wonsho,parent,female,N.forest patch,Wonsho Abbo
+AG047,Sidama,6.751658634,38.50959061,2051,Wonsho,parent,female,N.forest patch,Wonsho Abbo
+AG048,Sidama,6.751658634,38.50959061,2051,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG049,Sidama,6.750709552,38.51030641,2042,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG050,Sidama,6.750538899,38.51151912,2087,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG051,Sidama,6.750855726,38.51174502,2078,Wonsho,parent,female,N.forest patch,Wonsho Abbo
+AG052,Sidama,6.751408837,38.51306558,2081,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG053,Sidama,6.751418127,38.51330989,2094,Wonsho,parent,male,N.forest patch,Wonsho Abbo
+AG054,Sidama,6.75169905,38.51381634,2078,Wonsho,parent,male,N.forest patch,Wonsho Abbo
+AG055,Sidama,6.75169905,38.51381634,2078,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG056,Sidama,6.752421922,38.51302838,2072,Wonsho,progeny,unknown,N.forest patch,Wonsho Abbo
+AG057,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,male,gudumale/communal gathering,Wonsho Gudumale
+AG058,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,female,gudumale/communal gathering,Wonsho Gudumale
+AG059,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,female,gudumale/communal gathering,Wonsho Gudumale
+AG060,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,male,gudumale/communal gathering,Wonsho Gudumale
+AG061,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,male,gudumale/communal gathering,Wonsho Gudumale
+AG062,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,male,gudumale/communal gathering,Wonsho Gudumale
+AG063,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,male,gudumale/communal gathering,Wonsho Gudumale
+AG064,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,female,gudumale/communal gathering,Wonsho Gudumale
+AG065,Sidama,6.76217094,38.51983249,2110,Wonsho,parent,female,gudumale/communal gathering,Wonsho Gudumale
+AG066,Sidama,6.76217094,38.51983249,2110,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG067,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG068,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG069,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG070,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG071,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG072,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG073,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG074,Sidama,6.76213498,38.52005875,2107,Wonsho,progeny,unknown,gudumale/communal gathering,Wonsho Gudumale
+AG075,Sidama,7.099655166,38.63835307,1978,Wondogenet,parent,female,N.forest patch,Wondogenet college
+AG076,Sidama,7.099655166,38.63835307,1978,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG077,Sidama,7.100261287,38.63842504,1994,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG078,Sidama,7.100261287,38.63842504,1994,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG079,Sidama,7.100062507,38.63871497,2011,Wondogenet,parent,female,N.forest patch,Wondogenet college
+AG080,Sidama,7.097800393,38.6378474,1900,Wondogenet,parent,male,N.forest patch,Wondogenet college
+AG081,Sidama,7.098251689,38.63657928,1893,Wondogenet,parent,male,N.forest patch,Wondogenet college
+AG082,Sidama,7.097889611,38.63626262,1885,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG083,Sidama,7.103323592,38.63307078,1875,Wondogenet,parent,female,N.forest patch,Wondogenet college
+AG084,Sidama,7.10361312,38.63315205,1864,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG085,Sidama,7.10449928,38.63274384,1874,Wondogenet,parent,male,N.forest patch,Wondogenet college
+AG086,Sidama,7.104461183,38.63033507,1843,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG087,Sidama,7.104461183,38.63033507,1843,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG088,Sidama,7.107736193,38.63090297,1865,Wondogenet,parent,female,N.forest patch,Wondogenet college
+AG089,Sidama,7.107736193,38.63090297,1865,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG090,Sidama,7.106894348,38.63016107,1841,Wondogenet,parent,female,N.forest patch,Wondogenet college
+AG091,Sidama,7.106894348,38.63016107,1841,Wondogenet,progeny,unknown,N.forest patch,Wondogenet college
+AG092,Sidama,7.101219691,38.62644377,1801,Wondogenet,parent,male,N.forest patch,Wondogenet college
+AG093,Gurage,8.083981517,37.93338037,2214,Cheha,parent,female,N.forest patch,Auger
+AG094,Gurage,8.083981517,37.93338037,2214,Cheha,parent,male,N.forest patch,Auger
+AG095,Gurage,8.083981517,37.93338037,2214,Cheha,progeny,unknown,N.forest patch,Auger
+AG096,Gurage,8.083981517,37.93338037,2214,Cheha,progeny,unknown,N.forest patch,Auger
+AG097,Gurage,8.083493286,37.93343611,2217,Cheha,parent,male,N.forest patch,Auger
+AG098,Gurage,8.083493286,37.93343611,2217,Cheha,progeny,unknown,N.forest patch,Auger
+AG099,Gurage,8.083493286,37.93343611,2217,Cheha,parent,female,N.forest patch,Auger
+AG100,Gurage,8.083493286,37.93343611,2217,Cheha,progeny,unknown,N.forest patch,Auger
+AG101,Gurage,8.08358666,37.93456114,2248,Cheha,progeny,unknown,N.forest patch,Auger
+AG102,Gurage,8.08358666,37.93456114,2248,Cheha,progeny,unknown,N.forest patch,Auger
+AG103,Gurage,8.08358666,37.93456114,2248,Cheha,parent,male,N.forest patch,Auger
+AG104,Gurage,8.08358666,37.93456114,2248,Cheha,parent,female,N.forest patch,Auger
+AG105,Gurage,8.08410304,37.93489555,2208,Cheha,parent,female,N.forest patch,Auger
+AG106,Gurage,8.08410304,37.93489555,2208,Cheha,parent,male,N.forest patch,Auger
+AG107,Gurage,8.083805015,37.93505968,2238,Cheha,progeny,unknown,N.forest patch,Auger
+AG108,Gurage,8.083805015,37.93505968,2238,Cheha,progeny,unknown,N.forest patch,Auger
+AG109,Gurage,8.083453483,37.93551434,2225,Cheha,parent,female,N.forest patch,Auger
+AG110,Gurage,8.083453483,37.93551434,2225,Cheha,progeny,unknown,N.forest patch,Auger
+AG111,Gurage,8.083453483,37.93551434,2225,Cheha,progeny,unknown,N.forest patch,Auger
+AG112,Gurage,8.08282782,37.93488982,2249,Cheha,parent,male,N.forest patch,Auger
+AG113,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG114,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG115,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG116,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG117,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG118,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG119,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG120,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG121,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG122,Gurage,8.154080803,37.85682752,1943,Cheha,seedling,unknown,Nursery population,Girar dibir
+AG123,Gurage,8.245753278,38.08433803,2335,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG124,Gurage,8.245753278,38.08433803,2335,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG125,Gurage,8.245753278,38.08433803,2335,Mihur Aklil,parent,female,Church forest (old monastry),ME Gedam
+AG126,Gurage,8.245770517,38.08396575,2345,Mihur Aklil,parent,unknown,Church forest (old monastry),ME Gedam
+AG127,Gurage,8.245986688,38.08357486,2316,Mihur Aklil,parent,male,Church forest (old monastry),ME Gedam
+AG128,Gurage,8.245986688,38.08357486,2316,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG129,Gurage,8.245986688,38.08357486,2316,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG130,Gurage,8.245805574,38.08347541,2340,Mihur Aklil,parent,unknown,Church forest (old monastry),ME Gedam
+AG131,Gurage,8.24557901,38.0832762,2314,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG132,Gurage,8.24557901,38.0832762,2314,Mihur Aklil,parent,unknown,Church forest (old monastry),ME Gedam
+AG133,Gurage,8.246275087,38.08312933,2326,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG134,Gurage,8.246275087,38.08312933,2326,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG135,Gurage,8.246275087,38.08312933,2326,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG136,Gurage,8.246275087,38.08312933,2326,Mihur Aklil,progeny,unknown,Church forest (old monastry),ME Gedam
+AG137,Gurage,8.246727281,38.08311921,2345,Mihur Aklil,parent,female,Church forest (old monastry),ME Gedam
+AG138,Gurage,8.246872342,38.08327322,2337,Mihur Aklil,parent,male,Church forest (old monastry),ME Gedam
+AG139,Gurage,8.246800258,38.08339141,2335,Mihur Aklil,parent,male,Church forest (old monastry),ME Gedam
+AG140,Gurage,8.246879787,38.08257413,2331,Mihur Aklil,parent,male,Church forest (old monastry),ME Gedam
+AG141,Gurage,8.128224024,38.02307932,2332,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG142,Gurage,8.128026055,38.0234973,2328,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG143,Gurage,8.128280099,38.0238325,2352,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG144,Gurage,8.128280099,38.0238325,2352,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG145,Gurage,8.128280099,38.0238325,2352,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG146,Gurage,8.128109283,38.02425948,2361,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG147,Gurage,8.128064345,38.02437758,2346,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG148,Gurage,8.12811861,38.02437745,2348,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG149,Gurage,8.12811861,38.02437745,2348,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG150,Gurage,8.128236272,38.02441347,2352,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG151,Gurage,8.128444092,38.02433128,2352,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG152,Gurage,8.128444092,38.02433128,2352,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG153,Gurage,8.128444092,38.02433128,2352,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG154,Gurage,8.128725898,38.02492962,2369,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG155,Gurage,8.128725898,38.02492962,2369,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG156,Gurage,8.129367904,38.02487362,2370,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG157,Gurage,8.129367904,38.02487362,2370,Ejza,progeny,unknown,N.forest patch,Deban/Amba den
+AG158,Gurage,8.128678456,38.02400398,2353,Ejza,parent,unknown,N.forest patch,Deban/Amba den
+AG159,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG160,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG161,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG162,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG163,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG164,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG165,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG166,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG167,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG168,Sidama,7.102603316,38.47639293,1693,Hawassa,seedling,unknown,Nursery population,Tikurwuha
+AG169,Sidama,6.711203862,38.40166218,1807,Dale,parent,male,Natural remanat  patch,Bera-Tedicho
+AG170,Sidama,6.711203862,38.40166218,1807,Dale,parent,female,Natural remanat  patch,Bera-Tedicho
+AG171,Sidama,6.711203862,38.40166218,1807,Dale,parent,female,Natural remanat  patch,Bera-Tedicho
+AG172,Sidama,6.711203862,38.40166218,1807,Dale,parent,female,Natural remanat  patch,Bera-Tedicho
+AG173,Sidama,6.711203862,38.40166218,1807,Dale,parent,female,Natural remanat  patch,Bera-Tedicho
+AG174,Sidama,6.711203862,38.40166218,1807,Dale,parent,female,Natural remanat  patch,Bera-Tedicho
+AG175,Sidama,6.711203862,38.40166218,1807,Dale,parent,male,Natural remanat  patch,Bera-Tedicho
+AG176,Sidama,6.711203862,38.40166218,1807,Dale,parent,male,Natural remanat  patch,Bera-Tedicho
+AG177,Sidama,6.711203862,38.40166218,1807,Dale,parent,male,Natural remanat  patch,Bera-Tedicho
+AG178,Sidama,6.711203862,38.40166218,1807,Dale,parent,male,Natural remanat  patch,Bera-Tedicho
+AG179,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG180,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG181,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG182,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG183,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG184,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG185,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG186,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG187,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho
+AG188,Sidama,6.711203862,38.40166218,1807,Dale,progeny,unknown,Natural remanat  patch,Bera-Tedicho

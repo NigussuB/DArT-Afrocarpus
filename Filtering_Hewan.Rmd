@@ -1,0 +1,189 @@
+---
+title: "Basic Filtering"
+author: "Hewan Degu"
+date: "2023-07-01"
+output: html_document
+fontsize: 12pt
+bibliography: imputation.bib
+link-citations: true
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Basic SNP calling
+
+It is not a precise science to call SNPs when genotyping by sequencing. To maximize the possibility of a correct call at a certain locus, decisions must be made at various stages of the workflow.
+
+We will apply filters in this data analysis to improve the accuracy of the SNP data that is kept in the Avocado SNP or SilicoDArT dataset. 
+
+Several filters can be used to enhance the accuracy of the data displayed in.
+
+The basic ones are: 
+
+* filter out loci for which the  reproducibility (strictly repeatability) 
+is less than a specified threshold (threshold = 0.99)
+* filter out loci or individuals for which  the call rate (rate of non‐missing 
+values) is less than a specifiedthreshold, say threshold = 0.95
+* filter out monomorphic loci and loci  that are scored all NA
+* filter out loci that are all missing values (NA)
+* filter out SNPs that share a sequence tag, except one retained at random
+* filter out loci that differ from each  other by less than a specified number  of base pairs
+* filter out loci with exceptionally low  or high read depth (coverage)
+* filter out loci for which the tag length  is less that a threshold
+* filter out loci where the SNP location lies outside the trimmed sequencetag 
+
+1. Consideration must be given to the sequence of the filters because it can be crucial. 
+2. The weight given to losing individuals versus losing loci will determine whether to filter on call rate by individual before filtering on call rate by locus or to choose an alternative order.
+
+# Clearing the Consol
+
+```{r }
+ls()
+remove(list=ls())
+graphics.off()
+```
+
+## Directing the workign directory
+
+First indicate where your data found in the PC.
+
+The data is with 
+
+```{r, echo=FALSE}
+setwd("D:/research/Avocado/GBS-Avocado")
+```
+
+## Calling the necessary packages
+
+```{r, echo=FALSE}
+library(data.table)
+library(dplyr)
+library(pixiedust) 
+library(broom)
+library("adegenet")
+library(dartR)
+```
+
+ dartR package facilitate analysis of SNP data [@Gruber2018]
+
+## Population data
+
+```{r, echo=FALSE}
+Mydata <- read.csv("pop.csv", header = TRUE)
+summary(Mydata)
+df_stat <- Mydata %>% group_by(pop) %>% summarize(
+                                      count = n())
+df_stat 
+```
+
+##  SNP data
+
+## Importing Data
+
+```{r, echo=FALSE}
+gl <- gl.read.dart( 
+ filename="Report_DHas22-2934_SNP_2.csv", 
+ ind.metafile="pop.csv") 
+gl
+```
+
+## Filtering on reproducibility 
+
+First, we should examine the distribution of reproducibility measures (RepAvg) in 
+our dataset.
+
+```{r, echo=FALSE}
+glr <- gl.filter.reproducibility(gl,threshold=0.95)
+glr 
+```
+
+
+
+```{r, echo=FALSE}
+glc <- gl.recalc.metrics(glr) 
+glm <- gl.filter.monomorphs(glc) 
+```
+
+
+## Imputation
+
+When populations are panmictic, this function either imputes genotypes on a population-by-population basis or the state for presence-absence data.[@Sun2008]
+
+## When do we use Imputation
+
+Before any aggregation, we advise performing imputation on the sampling sites. Imputation involves replacing missing values with one of two approaches:
+
+* If "frequency" is present. Using the average allele frequencies at that locus in the group from which the sample was taken, genotypes scored as missing at a locus in an individual are imputed .
+* If "HW", genotypes that are absent from an individual's locus score are imputed using a random sample, assuming Hardy-Weinberg equilibrium. only applies to genotyping data.
+
+* If "neighbour," use the values from the closest neighbor to fill in the missing information for the focal sample. Continue with the next closest value and so forth until all missing values have been replaced.
+
+## Imputing the snps
+
+```{r, echo=FALSE}
+gl <- gl.filter.callrate(glm,threshold=0.90)
+gl <- gl.filter.allna(gl)
+gl <- gl.impute(gl,method="neighbour")
+
+```
+
+# Call Rates
+
+```{r, echo=FALSE}
+gl.report.callrate(gl)
+```
+
+## calling the libraries
+
+```{r, echo=FALSE}
+library("adegenet")
+library("hierfstat")
+library("dartR")
+library("adegenet")
+library("pegas")
+library("mmod")
+library("reshape2")
+library("ggplot2")
+library("poppr")
+library("RColorBrewer")
+library("igraph")
+```
+
+
+
+# Save data
+
+```{r}
+gl.save(gl,file="avocado1.Rdata") 
+gl.new <- gl.load("avocado1.Rdata") 
+gl2structure(
+  gl,
+  indNames = NULL,
+  addcolumns = NULL,
+  ploidy = 2,
+  exportMarkerNames = TRUE,
+  outfile = "gl.str",
+  outpath = tempdir(),
+  verbose = NULL
+)
+```
+
+
+# Reporing the packages and version
+
+```{r, echo=FALSE}
+options(width = 100)
+devtools::session_info()
+```
+
+# References
+
+
+
+
+
+

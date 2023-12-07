@@ -1,0 +1,227 @@
+---
+title: "Clustering plots"
+author: "Hewan Degu"
+date: "2023-07-03"
+output: html_document
+fontsize: 12pt
+bibliography: pg.bib
+link-citations: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Outline
+
+* Introduction
+* K-means clustering
+* DAPC
+* Multi-panel plot
+
+# Introduction
+
+How many groups are in my data, and which individuals belong to which groups, are frequent study inquiries. Algorithms for clustering make an effort to address this. These algorithms use programs like Struccture [@PorrasHurtado2013;@Pritchard2000], fastStructure[@Raj2014], and admixture[@Alexander2009] that are not part of the R environment.
+
+We routinely employ discriminant analysis of principle components (DAPC) [@Jombart2008] in the R environment[@R2023]. How to use this analysis has been covered in this discussion. Results from various steps in this investigation are shown. Here, we offer a method for displaying this data in a single chart.
+
+
+# K-means clustering
+
+To study variability for these values, we will first do K-means clustering over a range of K values and repeat 10 times for each value.
+
+# Load genlight data
+
+
+## Clearing the Consol
+
+```{r, echo=FALSE }
+ls()
+remove(list=ls())
+graphics.off()
+```
+
+## Directing the workign directory
+
+First indicate where your data found in the PC.
+
+The data is with 
+
+```{r, echo=FALSE}
+setwd("D:/research/Aynalem")
+```
+
+
+## calling the libraries
+
+```{r, echo=FALSE}
+library("adegenet")
+library("hierfstat")
+library("dartR")
+library("adegenet")
+library("pegas")
+library("mmod")
+library("reshape2")
+library("ggplot2")
+library("poppr")
+library("RColorBrewer")
+library("igraph")
+```
+
+# Importing saved  data
+
+```{r, echo=FALSE}
+gl <- gl.load("basil.Rdata") 
+gl
+```
+
+# K value
+
+
+
+```{r, echo=FALSE}
+maxK <- 20
+myMat <- matrix(nrow=20, ncol=maxK)
+colnames(myMat) <- 1:ncol(myMat)
+for(i in 1:nrow(myMat)){
+  grp <- find.clusters(gl, n.pca = 40, choose.n.clust = FALSE,  max.n.clust = maxK)
+  myMat[i,] <- grp$Kstat
+}
+```
+
+# Visualizing K- means clustering
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(reshape2)
+my_df <- melt(myMat)
+colnames(my_df)[1:3] <- c("Group", "K", "BIC")
+my_df$K <- as.factor(my_df$K)
+head(my_df)
+```
+
+```{r, echo=FALSE}
+p1 <- ggplot(my_df, aes(x = K, y = BIC))
+p1 <- p1 + geom_boxplot()
+p1 <- p1 + theme_bw()
+p1 <- p1 + xlab("Number of groups (K)")
+p1
+```
+
+In general, it is recommended to explore several values of K. The find.clusters() function includes some stochasticity. When we’re at the figure creation step we’ll need consistency, so we’ll set a seed. If you’re at an earlier stage in your analysis you should comment the set.seed() call out to explore how sensitive your results are to the seed.
+
+
+
+
+```{r, echo=FALSE}
+
+my_k <- 2:8
+my_k
+grp_l <- vector(mode = "list", length = length(my_k))
+dapc_l <- vector(mode = "list", length = length(my_k))
+grp_l
+dapc_l
+for(i in 1:length(dapc_l)){
+  set.seed(9)
+  grp_l[[i]] <- find.clusters(gl, n.pca = 40, n.clust = my_k[i])
+  dapc_l[[i]] <- dapc(gl, pop = grp_l[[i]]$grp, n.pca = 40, n.da = my_k[i])
+  #  dapc_l[[i]] <- dapc(gl_rubi, pop = grp_l[[i]]$grp, n.pca = 3, n.da = 2)
+}
+```
+
+
+A nice perspective is to create a scatterplot based on the discriminant functions. This helps us see how diffferent the resulting clusters are and if we may have chosen too high of a value for K.
+
+```{r, echo=FALSE}
+my_df <- as.data.frame(dapc_l[[ length(dapc_l) ]]$ind.coord)
+my_df$Group <- dapc_l[[ length(dapc_l) ]]$grp
+head(my_df)
+```
+
+```{r, echo=FALSE}
+my_pal <-c("#458b74","#8b008b","#458b00","#6495ed","#8a2be2","#cd3333","#0000ee","#999999","#68228b")
+p2 <- ggplot(my_df, aes(x = LD1, y = LD2, color = Group, fill = Group))
+p2 <- p2 + geom_point(size = 4, shape = 21)
+p2 <- p2 + theme_bw()
+p2 <- p2 + scale_color_manual(values=c(my_pal))
+p2 <- p2 + scale_fill_manual(values=c(paste(my_pal, "66", sep = "")))
+p2
+
+```
+
+Another popular perspective is to look at barplots of the posterior probabilities of group assignment for each sample. Here we’ll use “facets” to separate the different values of K. First we’ll need to combine our data into a single long form data.frame. We’ll also add our geographic information for additional faceting.
+
+
+
+
+```{r, echo=FALSE}
+my_df <- as.data.frame(dapc_l[[ length(dapc_l) ]]$ind.coord)
+my_df$Group <- dapc_l[[ length(dapc_l) ]]$grp
+head(my_df)
+my_df
+tmp <- as.data.frame(dapc_l[[1]]$posterior)
+tmp$K <- my_k[1]
+tmp$Isolate <- rownames(tmp)
+tmp <- melt(tmp, id = c("Isolate", "K"))
+names(tmp)[3:4] <- c("Group", "Posterior")
+tmp$Region <- gl@pop
+my_df <- tmp
+my_df
+head(tmp)
+tmp
+for(i in 2:length(dapc_l)){
+  tmp <- as.data.frame(dapc_l[[i]]$posterior)
+  tmp$K <- my_k[i]
+  tmp$Isolate <- rownames(tmp)
+  tmp <- melt(tmp, id = c("Isolate", "K"))
+  names(tmp)[3:4] <- c("Group", "Posterior")
+  tmp$Region <- gl@pop
+  
+  my_df <- rbind(my_df, tmp)
+}
+
+grp.labs <- paste("K =", my_k)
+names(grp.labs) <- my_k
+```
+
+
+```{r, echo=FALSE}
+p3 <- ggplot(my_df, aes(x = Isolate, y = Posterior, fill = Group))
+p3 <- p3 + geom_bar(stat = "identity")
+p3 <- p3 + facet_grid(K ~ Region, scales = "free_x", space = "free", 
+                      labeller = labeller(K = grp.labs))
+p3 <- p3 + theme_bw()
+p3 <- p3 + ylab("Posterior membership probability")
+p3 <- p3 + theme(legend.position='none')
+#p3 <- p3 + scale_color_brewer(palette="Dark2")
+p3 <- p3 + scale_fill_manual(values=c(my_pal))
+p3 <- p3 + theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 2))
+p3
+```
+
+
+```{r, echo=FALSE}
+library("ggpubr")
+#tiff('dapc__k3_5_dapc.tiff', width=6.5, height=6.5, units='in', compression='lzw', res=300)
+ggarrange(ggarrange(p1,
+                    p2,
+                    ncol = 2, labels = c("A", "B")),
+          p3,
+          nrow = 2,
+          labels = c("", "C"),
+          heights = c(1, 2)
+)
+```
+
+
+
+# Reference
+
+<div id="refs"></div>
+
+# Reporing the packages and version
+
+```{r, echo=FALSE}
+options(width = 100)
+devtools::session_info()
+```
