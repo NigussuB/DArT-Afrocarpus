@@ -289,7 +289,74 @@ nLoc(gl7) # produced 3557 SNPs
 
 m <- as.matrix(gl7) #save genlight object as matrix
 write.csv(m,file="filtered_loci_metadata7.csv") # saves as .csv
-gl.save(gl7,file="afrocarpus7.Rdata") # saves the the data as an R object filtered with 95% reproducibility, deleted individuals with less than 70% call rate, filtered loci with 70 % call rate, , and monomorphic loci filtered out. it resulted in 3557 SNPS 
+gl.save(gl7,file="afrocarpus7.Rdata") # saves the the data as an R object filtered with 95% reproducibility, deleted individuals with less than 70% call rate, filtered loci with 70 % call rate, and monomorphic loci filtered out. it resulted in 3557 SNPS 
+
+
+##8. Filtering (95% reproducibility, >90% call rate,  monomorphic loci, and removing individuals with < 50% call rate )
+gl2 <- gl.filter.secondaries(gl) # filter out SNPs that share a sequence tag, except one retained at random
+
+nLoc(gl2) #produced 9819 SNPs
+gl3 <- gl.filter.rdepth(gl2) # filter out loci with exceptionally low or high read depth (coverage)
+nLoc(gl3) #produced 8551 SNPs
+
+gl4 <- gl.filter.reproducibility(gl3, threshold = 0.95) # filter out loci for which the reproducibility (strictly repeatability) is less than threshold = 0.95
+
+gl4 <- gl.recalc.metrics(gl4) # recalculating the locus metrics after filtering because the initial call rate parameter will no longer be accurate after the filtering out individuals or populations
+nLoc(gl4) #produced 7519 SNPs
+
+gl5 <- gl.filter.callrate(gl4, method = "ind", threshold = 0.50) #Filter individuals on call rate (threshold =50% )deleted individuals. Individuals deleted (CallRate <=  0.5 ):AG025[Tesso/Borite], AG041[Wonsho Abbo], AG057[Wonsho Gudumale], AG002[Tesso/Sodicho], AG090[Wondogenet college], AG026[Tesso/Borite], AG042[Wonsho Abbo], AG050[Wonsho Abbo], AG058[Wonsho Gudumale], AG083[Wondogenet college], AG027[Tesso/Borite], AG043[Wonsho Abbo], AG060[Wonsho Gudumale], AG029[Tesso/Borite], AG037[Wonsho Abbo], AG053[Wonsho Abbo], AG022[Tesso/Borite], AG030[Tesso/Borite], AG038[Wonsho Abbo], AG079[Wondogenet college], AG048[Wonsho Abbo], AG064[Wonsho Gudumale], AG103[Auger], AG127[ME Gedam], AG135[ME Gedam], AG143[Deban/Amba den], AG151[Deban/Amba den], AG128[ME Gedam], AG136[ME Gedam], AG169[Bera-Tedicho], AG137[ME Gedam], AG106[Auger], AG138[ME Gedam], AG154[Deban/Amba den], AG131[ME Gedam], AG155[Deban/Amba den], AG172[Bera-Tedicho], AG140[ME Gedam], AG148[Deban/Amba den], AG173[Bera-Tedicho], AG181[Bera-Tedicho], AG109[Auger], AG141[Deban/Amba den], AG149[Deban/Amba den], AG174[Bera-Tedicho], AG142[Deban/Amba den], AG150[Deban/Amba den],
+
+gl5 <- gl.recalc.metrics(gl5)
+nLoc(gl5) # produced 7519 SNPs
+
+gl6 <- gl.filter.callrate(gl5, method="loc", threshold = 0.90)  #filter out loci with callrate lower than 70%
+
+gl6 <- gl.recalc.metrics(gl6)
+
+nLoc(gl6) # produced 187 SNPs
+
+gl7 <- gl.filter.monomorphs(gl6, v=0) #filter out monomorphic loci
+gl7 <- gl.recalc.metrics(gl7)
+gl7
+nLoc(gl7) # produced 157 SNPs
+
+m <- as.matrix(gl7) #save genlight object as matrix
+write.csv(m,file="filtered_loci_metadata8.csv") # saves as .csv
+gl.save(gl7,file="afrocarpus8.Rdata") # saves the the data as an R object filtered with 95% reproducibility, 70% call rate, deleted individuals with less than 50% call rate, and monomorphic loci filtered out. it resulted in 157 SNPS 
+
+
+##9. Filtering (95% reproducibility, >80% call rate,  monomorphic loci, and removing individuals with < 50% call rate )
+gl2 <- gl.filter.secondaries(gl) # filter out SNPs that share a sequence tag, except one retained at random
+
+nLoc(gl2) #produced 9819 SNPs
+gl3 <- gl.filter.rdepth(gl2) # filter out loci with exceptionally low or high read depth (coverage)
+nLoc(gl3) #produced 8550 SNPs
+
+gl4 <- gl.filter.reproducibility(gl3, threshold = 0.95) # filter out loci for which the reproducibility (strictly repeatability) is less than threshold = 0.95
+
+gl4 <- gl.recalc.metrics(gl4) # recalculating the locus metrics after filtering because the initial call rate parameter will no longer be accurate after the filtering out individuals or populations
+nLoc(gl4) #produced 7517 SNPs
+
+gl5 <- gl.filter.callrate(gl4, method = "ind", threshold = 0.50) #Filter individuals on call rate (threshold =50% )deleted individuals. Individuals deleted (CallRate <=  0.5 ):AG025[Tesso/Borite], AG041[Wonsho Abbo], AG057[Wonsho Gudumale], AG002[Tesso/Sodicho], AG090[Wondogenet college], AG026[Tesso/Borite], AG042[Wonsho Abbo], AG050[Wonsho Abbo], AG058[Wonsho Gudumale], AG083[Wondogenet college], AG027[Tesso/Borite], AG043[Wonsho Abbo], AG060[Wonsho Gudumale], AG029[Tesso/Borite], AG037[Wonsho Abbo], AG053[Wonsho Abbo], AG022[Tesso/Borite], AG030[Tesso/Borite], AG038[Wonsho Abbo], AG079[Wondogenet college], AG048[Wonsho Abbo], AG064[Wonsho Gudumale], AG103[Auger], AG127[ME Gedam], AG135[ME Gedam], AG143[Deban/Amba den], AG151[Deban/Amba den], AG128[ME Gedam], AG136[ME Gedam], AG169[Bera-Tedicho], AG137[ME Gedam], AG106[Auger], AG138[ME Gedam], AG154[Deban/Amba den], AG131[ME Gedam], AG155[Deban/Amba den], AG172[Bera-Tedicho], AG140[ME Gedam], AG148[Deban/Amba den], AG173[Bera-Tedicho], AG181[Bera-Tedicho], AG109[Auger], AG141[Deban/Amba den], AG149[Deban/Amba den], AG174[Bera-Tedicho], AG142[Deban/Amba den], AG150[Deban/Amba den],
+
+gl5 <- gl.recalc.metrics(gl5)
+nLoc(gl5) # produced 7515 SNPs
+
+gl6 <- gl.filter.callrate(gl5, method="loc", threshold = 0.80)  #filter out loci with callrate lower than 80%
+
+gl6 <- gl.recalc.metrics(gl6)
+
+nLoc(gl6) # produced 1238 SNPs
+
+gl7 <- gl.filter.monomorphs(gl6, v=0) #filter out monomorphic loci
+gl7 <- gl.recalc.metrics(gl7)
+gl7
+nLoc(gl7) # produced 1057 SNPs
+
+m <- as.matrix(gl7) #save genlight object as matrix
+write.csv(m,file="filtered_loci_metadata9.csv") # saves as .csv
+gl.save(gl7,file="afrocarpus9.Rdata") # saves the the data as an R object filtered with 95% reproducibility, 70 % call rate, deleted individuals with less than 50% call rate, and monomorphic loci filtered out. it resulted in 1017 SNPS 
+
 
 nLoc(gl7) #returns the number of loci.
 

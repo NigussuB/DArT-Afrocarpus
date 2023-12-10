@@ -1,0 +1,52 @@
+1,11,,,,,,,,,,
+,genalex_progeny,Pairwise Population Fst Values,,,,,,,,,
+Auger,Bera-Tedicho,Deban/Amba den,Girar dibir,ME Gedam,Tesso/Borite,Tesso/Sodicho,Tikurwuha,Wondogenet college,Wonsho Abbo,Wonsho Gudumale,
+0.000,,,,,,,,,,,Auger
+0.000,0.000,,,,,,,,,,Bera-Tedicho
+0.012,0.009,0.000,,,,,,,,,Deban/Amba den
+0.000,0.000,0.000,0.000,,,,,,,,Girar dibir
+0.003,0.000,0.000,0.000,0.000,,,,,,,ME Gedam
+0.004,0.003,0.007,0.000,0.000,0.000,,,,,,Tesso/Borite
+0.003,0.001,0.011,0.000,0.000,0.000,0.000,,,,,Tesso/Sodicho
+0.005,0.003,0.012,0.000,0.004,0.003,0.000,0.000,,,,Tikurwuha
+0.000,0.000,0.020,0.000,0.007,0.002,0.000,0.000,0.000,,,Wondogenet college
+0.000,0.000,0.034,0.000,0.023,0.000,0.000,0.000,0.000,0.000,,Wonsho Abbo
+0.002,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,Wonsho Gudumale
+,,,,,,,,,,,
+Fst Values below diagonal.,,,,,,,,,,,
+,,,,,,,,,,,
+Warning! Negative Fst of -0.005 between pops Auger and Bera-Tedicho converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.004 between pops Auger and Girar dibir converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.008 between pops Bera-Tedicho and Girar dibir converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.013 between pops Deban/Amba den and Girar dibir converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.007 between pops Bera-Tedicho and ME Gedam converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.016 between pops Deban/Amba den and ME Gedam converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.014 between pops Girar dibir and ME Gedam converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of 0.000 between pops Girar dibir and Tesso/Borite converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.001 between pops ME Gedam and Tesso/Borite converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Girar dibir and Tesso/Sodicho converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.001 between pops ME Gedam and Tesso/Sodicho converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.004 between pops Tesso/Borite and Tesso/Sodicho converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of 0.000 between pops Girar dibir and Tikurwuha converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.011 between pops Tesso/Sodicho and Tikurwuha converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.004 between pops Auger and Wondogenet college converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Bera-Tedicho and Wondogenet college converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Girar dibir and Wondogenet college converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.005 between pops Tesso/Sodicho and Wondogenet college converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.004 between pops Tikurwuha and Wondogenet college converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.007 between pops Auger and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.001 between pops Bera-Tedicho and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.005 between pops Girar dibir and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.009 between pops Tesso/Borite and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.011 between pops Tesso/Sodicho and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.013 between pops Tikurwuha and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.018 between pops Wondogenet college and Wonsho Abbo converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of 0.000 between pops Bera-Tedicho and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.010 between pops Deban/Amba den and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.001 between pops Girar dibir and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.006 between pops ME Gedam and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.005 between pops Tesso/Borite and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Tesso/Sodicho and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Tikurwuha and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.002 between pops Wondogenet college and Wonsho Gudumale converted to zero!,,,,,,,,,,,
+Warning! Negative Fst of -0.006 between pops Wonsho Abbo and Wonsho Gudumale converted to zero!,,,,,,,,,,,
